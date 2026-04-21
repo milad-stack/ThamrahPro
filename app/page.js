@@ -335,7 +335,7 @@ export default function ThamrahPremium() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-8 md:flex-row">
           <div className="text-sm text-slate-400">© 2026 Thamrah Professional for Information Technology. All rights reserved.</div>
           <div className="flex items-center gap-3">
-            {[["Facebook","https://www.facebook.com/ThamraPro"],["LinkedIn","https://www.linkedin.com/company/thamrahpro"],["Instagram","https://instagram.com/thamrahpro"]].map(([item,link]) => (
+            {[["Facebook","https://www.facebook.com/ThamrahPro"],["LinkedIn","https://www.linkedin.com/company/thamrahpro"],["Instagram","https://instagram.com/thamrahpro"]].map(([item,link]) => (
               <a key={item} href={link} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-300 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-white/10 hover:text-white">{item}</a>
             ))}
           </div>
