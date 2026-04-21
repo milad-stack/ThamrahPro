@@ -1,6 +1,32 @@
 "use client";
 import { useState } from "react";
 
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
+      <path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.6c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.3v2.4H8v3.2h2.7V22h2.8Z" />
+    </svg>
+  );
+}
+
+function LinkedinIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
+      <path d="M6.94 8.5H4V20h2.94V8.5ZM5.47 7.2a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4ZM20 12.9c0-3.3-1.76-4.83-4.1-4.83-1.9 0-2.74 1.05-3.21 1.79V8.5H9.75c.04.9 0 11.5 0 11.5h2.94v-6.42c0-.34.03-.68.13-.92.27-.68.9-1.39 1.95-1.39 1.37 0 1.92 1.05 1.92 2.59V20H20v-7.1Z" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
 export default function ThamrahPremium() {
   const [lang, setLang] = useState("en");
   const isArabic = lang === "ar";
@@ -542,8 +568,22 @@ export default function ThamrahPremium() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-8 md:flex-row">
           <div className="text-sm text-slate-400">{t.footer}</div>
           <div className="flex items-center gap-3">
-            {[[t.social[0],"https://www.facebook.com/ThamrahPro"],[t.social[1],"https://www.linkedin.com/company/thamrahpro"],[t.social[2],"https://instagram.com/thamrahpro"]].map(([item,link]) => (
-              <a key={item} href={link} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-300 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-white/10 hover:text-white">{item}</a>
+            {[
+              [t.social[0], "https://www.facebook.com/ThamrahPro", FacebookIcon],
+              [t.social[1], "https://www.linkedin.com/company/thamrahpro", LinkedinIcon],
+              [t.social[2], "https://instagram.com/thamrahpro", InstagramIcon],
+            ].map(([item, link, Icon]) => (
+              <a
+                key={item}
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={item}
+                title={item}
+                className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-300 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-white/10 hover:text-white"
+              >
+                <Icon />
+              </a>
             ))}
           </div>
         </div>
