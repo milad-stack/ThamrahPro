@@ -422,8 +422,11 @@ export default function ThamrahPremium() {
         </div>
       </section>
 
-      <section id="services" className="px-6 py-20">
+      <section id="services" className="px-4 sm:px-6 lg:px-8 py-20 reveal">
         <div className="mx-auto max-w-7xl">
+
+		<img src="/services.jpg" alt="IT Services" className="mb-10 w-full max-w-5xl mx-auto rounded-2xl shadow-lg"/>
+
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">{t.servicesTitle}</p>
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">{t.servicesHeading}</h2>
