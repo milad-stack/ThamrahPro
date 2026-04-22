@@ -423,27 +423,32 @@ export default function ThamrahPremium() {
       </section>
 
       <section id="services" className="px-4 sm:px-6 lg:px-8 py-20 reveal">
-        <div className="mx-auto max-w-7xl">
+       <div className="mt-12 grid gap-10 lg:grid-cols-2 items-center">
 
-		<img src="/services.jpg" alt="IT Services" className="mb-10 w-full max-w-5xl mx-auto rounded-2xl shadow-lg"/>
+  {/* IMAGE */}
+  <img
+    src="/services.jpg"
+    alt="IT Services"
+    className="rounded-2xl shadow-xl w-full"
+  />
 
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">{t.servicesTitle}</p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">{t.servicesHeading}</h2>
-            <p className="mt-4 leading-8 text-slate-400">{t.servicesText}</p>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {t.services.map((service) => (
-              <div key={service.title} className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/90">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/20 to-green-400/20 text-xl font-bold text-cyan-300">
-                  ●
-                </div>
-                <h3 className="mt-5 text-xl font-semibold">{service.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-400">{service.text}</p>
-              </div>
-            ))}
-          </div>
+  {/* SERVICES CARDS */}
+  <div className="grid gap-6 md:grid-cols-2">
+    {t.services.map((service) => (
+      <div
+        key={service.title}
+        className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/90"
+      >
+        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/20 to-green-400/20 text-xl font-bold text-cyan-300">
+          ●
         </div>
+        <h3 className="mt-5 text-xl font-semibold">{service.title}</h3>
+        <p className="mt-3 text-sm leading-7 text-slate-400">{service.text}</p>
+      </div>
+    ))}
+  </div>
+
+</div>
       </section>
 
       <section id="about" className="border-y border-white/10 bg-white/5 px-6 py-20">
