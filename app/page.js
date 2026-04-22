@@ -385,6 +385,8 @@ export default function ThamrahPremium() {
 
       <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 text-center reveal">
 
+	<div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity-40"></div>
+	<div className="absolute inset-0 bg-slate-950/60"></div>
         <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-green-500/20 blur-3xl" />
         <div className="relative mx-auto max-w-5xl">
