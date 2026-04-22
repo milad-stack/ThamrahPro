@@ -488,21 +488,12 @@ export default function ThamrahPremium() {
         className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/90"
       >
         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/20 to-green-400/20 text-xl font-bold text-cyan-300">
-          {[
-  		ServerIcon,
- 		ShieldIcon,
-  		CloudIcon,
-  		SupportIcon,
-  		NetworkIcon,
-  		ConsultingIcon,
-	][index] && React.createElement([
-  		ServerIcon,
-  		ShieldIcon,
-  		CloudIcon,
- 		SupportIcon,
-  		NetworkIcon,
-  		ConsultingIcon,
-	][index])}
+          	{index === 0 && <ServerIcon />}
+  		{index === 1 && <ShieldIcon />}
+  		{index === 2 && <CloudIcon />}
+  		{index === 3 && <SupportIcon />}
+  		{index === 4 && <NetworkIcon />}
+  		{index === 5 && <ConsultingIcon />}
         </div>
 
         <h3 className="mt-5 text-xl font-semibold">{service.title}</h3>
