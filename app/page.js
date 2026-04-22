@@ -27,6 +27,54 @@ function InstagramIcon() {
   );
 }
 
+function ServerIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+      <path d="M3 4h18v6H3V4Zm0 10h18v6H3v-6Zm4-7h2v2H7V7Zm0 10h2v2H7v-2Z" />
+    </svg>
+  );
+}
+
+function ShieldIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+      <path d="M12 2 4 5v6c0 5 3.8 9.7 8 11 4.2-1.3 8-6 8-11V5l-8-3Z" />
+    </svg>
+  );
+}
+
+function CloudIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+      <path d="M6 19h11a4 4 0 0 0 0-8 5 5 0 0 0-9.7-1.5A3.5 3.5 0 0 0 6 19Z" />
+    </svg>
+  );
+}
+
+function SupportIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+      <path d="M12 3a9 9 0 0 0-9 9v3h3v-3a6 6 0 1 1 12 0v3h3v-3a9 9 0 0 0-9-9Zm-3 14h6v2H9v-2Z" />
+    </svg>
+  );
+}
+
+function NetworkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+      <path d="M4 10h4v4H4v-4Zm6-6h4v4h-4V4Zm0 12h4v4h-4v-4Zm6-6h4v4h-4v-4Z" />
+    </svg>
+  );
+}
+
+function ConsultingIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+      <path d="M3 3h18v12H3V3Zm2 2v8h14V5H5Zm4 10h6v2H9v-2Z" />
+    </svg>
+  );
+}
+
 export default function ThamrahPremium() {
  
 		const [lang, setLang] = useState("en");
@@ -434,14 +482,29 @@ export default function ThamrahPremium() {
 
   {/* SERVICES CARDS */}
   <div className="grid gap-6 md:grid-cols-2">
-    {t.services.map((service) => (
+    {t.services.map((service, index) => (
       <div
         key={service.title}
         className="rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30 hover:bg-slate-900/90"
       >
         <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400/20 to-green-400/20 text-xl font-bold text-cyan-300">
-          ●
+          {[
+  		ServerIcon,
+ 		ShieldIcon,
+  		CloudIcon,
+  		SupportIcon,
+  		NetworkIcon,
+  		ConsultingIcon,
+	][index] && React.createElement([
+  		ServerIcon,
+  		ShieldIcon,
+  		CloudIcon,
+ 		SupportIcon,
+  		NetworkIcon,
+  		ConsultingIcon,
+	][index])}
         </div>
+
         <h3 className="mt-5 text-xl font-semibold">{service.title}</h3>
         <p className="mt-3 text-sm leading-7 text-slate-400">{service.text}</p>
       </div>
