@@ -452,28 +452,46 @@ export default function ThamrahPremium() {
       </section>
 
       <section id="about" className="border-y border-white/10 bg-white/5 px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">{t.aboutTitle}</p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">{t.aboutHeading}</h2>
-            <p className="mt-5 leading-8 text-slate-300">{t.aboutText}</p>
-            <div className="mt-8 rounded-[2rem] border border-cyan-400/20 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">{t.whyTitle}</p>
-              <h3 className="mt-3 text-2xl font-bold">{t.whyHeading}</h3>
-              <p className="mt-4 leading-8 text-slate-300">{t.whyText}</p>
-            </div>
-          </div>
+        
+<div className="mt-12 grid gap-10 lg:grid-cols-2 items-center">
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            {t.trustCards.map((card, i) => (
-              <div key={card.number} className={`rounded-3xl border border-white/10 bg-slate-900 p-6 ${i === 2 ? "sm:col-span-2" : ""}`}>
-                <div className="text-2xl font-bold text-cyan-300">{card.number}</div>
-                <div className="mt-3 text-lg font-semibold">{card.title}</div>
-                <p className="mt-2 text-sm leading-7 text-slate-400">{card.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  {/* IMAGE */}
+  <img
+    src="/about.jpg"
+    alt="About Thamrah"
+    className="rounded-2xl shadow-xl w-full"
+  />
+
+  {/* TEXT */}
+  <div>
+    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">
+      {t.aboutTitle}
+    </p>
+
+    <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+      {t.aboutHeading}
+    </h2>
+
+    <p className="mt-5 leading-8 text-slate-300">
+      {t.aboutText}
+    </p>
+
+    <div className="mt-8 rounded-[2rem] border border-cyan-400/20 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 p-6">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+        {t.whyTitle}
+      </p>
+
+      <h3 className="mt-3 text-2xl font-bold">
+        {t.whyHeading}
+      </h3>
+
+      <p className="mt-4 leading-8 text-slate-300">
+        {t.whyText}
+      </p>
+    </div>
+  </div>
+
+</div>
       </section>
 
       <section id="process" className="px-6 py-20">
