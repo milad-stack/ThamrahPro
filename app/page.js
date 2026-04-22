@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function FacebookIcon() {
   return (
@@ -28,8 +28,27 @@ function InstagramIcon() {
 }
 
 export default function ThamrahPremium() {
-  const [lang, setLang] = useState("en");
-  const isArabic = lang === "ar";
+ 
+		const [lang, setLang] = useState("en");
+		const isArabic = lang === "ar";
+
+		useEffect(() => {
+ 		 	const elements = document.querySelectorAll(".reveal");
+
+ 			 const observer = new IntersectionObserver(
+ 				 (entries) => {
+     					 entries.forEach((entry) => {
+       						 if (entry.isIntersecting) {entry.target.classList.add("revealed");}
+									});
+						},
+    			{ threshold: 0.15 }
+ 			 );
+
+ 				 elements.forEach((el) => observer.observe(el));
+
+ 				 return () => observer.disconnect();
+			}, []);
+
 
   const content = {
     en: {
@@ -364,7 +383,7 @@ export default function ThamrahPremium() {
         </div>
       </header>
 
-      <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 text-center fade-in">
+      <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 text-center reveal">
 
         <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-green-500/20 blur-3xl" />
@@ -541,7 +560,7 @@ export default function ThamrahPremium() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 pt-20">
+     <section className="px-4 sm:px-6 lg:px-8 pb-20 pt-20 reveal">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-2">
           <div className="rounded-[2rem] border border-white/10 bg-slate-900/65 p-8 backdrop-blur-xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">

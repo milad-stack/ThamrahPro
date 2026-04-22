@@ -23,5 +23,17 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
+/* Scroll animation (hidden state) */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* When visible */
+.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
