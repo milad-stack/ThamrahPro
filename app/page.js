@@ -375,7 +375,7 @@ export default function ThamrahPremium() {
           <div className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
             {t.badge}
           </div>
-          <h1 className="mt-6 text-5xl font-bold leading-tight md:text-6xl">
+          <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-green-400 bg-clip-text text-transparent">
               {t.heroTitle}
             </span>
@@ -383,7 +383,7 @@ export default function ThamrahPremium() {
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             {t.heroText}
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
  	 	
 		<a href="#contact" className="rounded-xl bg-gradient-to-r from-cyan-400 to-green-400 px-6 py-3 font-semibold text-black transition hover:scale-105 inline-block">
  			 {t.cta1}
