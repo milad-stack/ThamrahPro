@@ -359,7 +359,7 @@ export default function ThamrahPremium() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-cyan-400 to-green-400" />
+            <img src="/logo.png" alt="Thamrah Logo" className="h-10 object-contain"/>
             <div>
               <div className="text-lg font-bold tracking-[0.18em]">{t.brand}</div>
               <div className="text-xs uppercase tracking-[0.22em] text-slate-400">{t.sub}</div>
