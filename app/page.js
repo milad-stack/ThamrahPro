@@ -356,14 +356,10 @@ export default function ThamrahPremium() {
               <a href="#faq" className="transition hover:text-white">{isArabic ? "الأسئلة" : "FAQ"}</a>
               <a href="#contact" className="transition hover:text-white">{isArabic ? "تواصل" : "Contact"}</a>
             </nav>
-            <div className="flex gap-2">
-              <button onClick={() => setLang("en")} className={`rounded-lg px-3 py-1 text-sm ${lang === "en" ? "bg-white text-black" : "bg-white/10 text-white"}`}>
-                EN
-              </button>
-              <button onClick={() => setLang("ar")} className={`rounded-lg px-3 py-1 text-sm ${lang === "ar" ? "bg-white text-black" : "bg-white/10 text-white"}`}>
-                عربي
-              </button>
-            </div>
+         	  <button onClick={() => setLang(lang === "en" ? "ar" : "en")} 
+			className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:bg-white/10">
+ 			 🌐 {lang === "en" ? "عربي" : "EN"}
+			</button>
           </div>
         </div>
       </header>
