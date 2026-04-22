@@ -384,13 +384,15 @@ export default function ThamrahPremium() {
             {t.heroText}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <button className="rounded-xl bg-gradient-to-r from-cyan-400 to-green-400 px-6 py-3 font-semibold text-black transition hover:scale-105">
-              {t.cta1}
-            </button>
+ 	 	
+		<a href="#contact" className="rounded-xl bg-gradient-to-r from-cyan-400 to-green-400 px-6 py-3 font-semibold text-black transition hover:scale-105 inline-block">
+ 			 {t.cta1}
+		</a>
            
-	<a href="#services" className="rounded-xl border border-white/20 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10 inline-block">
-  		{t.cta2}
-	</a>
+		<a href="#services" className="rounded-xl border border-white/20 bg-white/5 px-6 py-3 font-semibold transition hover:bg-white/10 inline-block">
+  			{t.cta2}
+		</a>
+
           </div>
           <div className="mx-auto mt-10 grid max-w-4xl gap-4 md:grid-cols-4">
             {t.highlights.map((item) => (
