@@ -105,6 +105,11 @@ export default function ThamrahPremium() {
 		const inquiryText = `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\n\n${form.message}`;
 
 		useEffect(() => {
+			document.documentElement.lang = lang;
+			document.documentElement.dir = isArabic ? "rtl" : "ltr";
+		}, [lang, isArabic]);
+
+		useEffect(() => {
  		 	const elements = document.querySelectorAll(".reveal");
 
  			 const observer = new IntersectionObserver(
@@ -113,7 +118,7 @@ export default function ThamrahPremium() {
        						 if (entry.isIntersecting) {entry.target.classList.add("revealed");}
 									});
 						},
-    			{ threshold: 0.15 }
+    			{ threshold: 0.05, rootMargin: "0px 0px -5% 0px" }
  			 );
 
  				 elements.forEach((el) => observer.observe(el));
@@ -171,7 +176,7 @@ export default function ThamrahPremium() {
       aboutTitle: "About Us",
       aboutHeading: "A modern IT company with a professional mindset",
       aboutText:
-        "Thamrah Professional for Information Technology helps businesses build reliable, secure, and practical IT environments that support daily operations and long-term growth.",
+        "Thamrah Professionals for Information Technology helps businesses build reliable, secure, and practical IT environments that support daily operations and long-term growth.",
       whyTitle: "Why Choose Thamrah",
       whyHeading:
         "Technology support that is accessible, affordable, and business-ready",
@@ -268,6 +273,10 @@ export default function ThamrahPremium() {
       sendViaWhatsapp: "Send via WhatsApp",
       sendViaEmail: "Send via email",
       menu: "Menu",
+      emailLabel: "Email",
+      phoneLabel: "Phone",
+      locationLabel: "Location",
+      locationValue: "Amman, Jordan",
       locationTitle: "Our Location",
       locationText:
         "Serving businesses in Amman and across Jordan with remote and on-site IT support.",
@@ -277,7 +286,7 @@ export default function ThamrahPremium() {
       whatsapp: "WhatsApp",
       social: ["Facebook", "LinkedIn", "Instagram"],
       footer:
-        "© 2026 Thamrah Professional for Information Technology. All rights reserved.",
+        "© 2026 Thamrah Professionals for Information Technology. All rights reserved.",
     },
     ar: {
       brand: "ثمرة",
@@ -423,6 +432,10 @@ export default function ThamrahPremium() {
       sendViaWhatsapp: "أرسل عبر واتساب",
       sendViaEmail: "أرسل عبر البريد الإلكتروني",
       menu: "القائمة",
+      emailLabel: "البريد الإلكتروني",
+      phoneLabel: "الهاتف",
+      locationLabel: "الموقع",
+      locationValue: "عمّان، الأردن",
       locationTitle: "موقعنا",
       locationText:
         "نخدم الشركات في عمّان وعبر الأردن من خلال دعم تقني عن بُعد وميداني.",
@@ -451,13 +464,9 @@ export default function ThamrahPremium() {
     <div dir={isArabic ? "rtl" : "ltr"} className="min-h-screen bg-slate-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Thamrah Logo" className="h-9 w-auto object-contain sm:h-11"/>
-            <div>
-              <div className="text-lg font-bold tracking-[0.18em]">{t.brand}</div>
-              <div className="whitespace-nowrap text-[10px] uppercase tracking-[0.14em] text-slate-400 sm:text-xs sm:tracking-[0.22em]">{t.sub}</div>
-            </div>
-          </div>
+          <a href="#" aria-label="Thamrah Professionals for Information Technology" className="flex shrink-0 items-center rounded-xl bg-white px-2.5 py-1.5 shadow-sm">
+            <img src="/logo-header.png" alt="Thamrah Professionals for Information Technology" width="140" height="40" className="h-8 w-auto sm:h-9" />
+          </a>
 
           <div className="flex items-center gap-3 md:gap-4">
             <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
@@ -505,12 +514,10 @@ export default function ThamrahPremium() {
         ) : null}
       </header>
 
-      <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 text-center reveal">
-
-	<div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity-60"></div>
-	<div className="absolute inset-0 bg-slate-950/60"></div>
+      <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div className="hero-grid absolute inset-0" aria-hidden="true" />
         <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-green-500/20 blur-3xl" />
+        <div className="absolute bottom-24 right-0 h-72 w-72 rounded-full bg-green-500/15 blur-3xl" />
         <div className="relative mx-auto max-w-5xl">
           <div className="inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
             {t.badge}
@@ -545,7 +552,14 @@ export default function ThamrahPremium() {
       </section>
 
       <section id="services" className="px-4 sm:px-6 lg:px-8 py-20 reveal">
-       <div className="mt-12 grid gap-10 lg:grid-cols-2 items-center">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">{t.servicesTitle}</p>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">{t.servicesHeading}</h2>
+            <p className="mt-4 leading-8 text-slate-400">{t.servicesText}</p>
+          </div>
+        </div>
+       <div className="mx-auto mt-12 grid max-w-7xl gap-10 lg:grid-cols-2 items-center">
 
   {/* IMAGE */}
   <img
@@ -693,10 +707,9 @@ export default function ThamrahPremium() {
             <h2 className="mt-3 text-3xl font-bold md:text-4xl">{t.contactHeading}</h2>
             <p className="mt-5 max-w-xl leading-8 text-slate-400">{t.contactText}</p>
             <div className="mt-8 space-y-3 text-slate-300">
-              <div>Email: info@thamrahpro.com</div>
-              <div>Phone: +962 79 9150175</div>
-              <div>Location: Amman, Jordan</div>
-              <div>Domain: thamrahpro.com</div>
+              <div>{t.emailLabel}: <a href="mailto:info@thamrahpro.com" className="text-cyan-300 hover:underline">info@thamrahpro.com</a></div>
+              <div>{t.phoneLabel}: <a href="tel:+962799150175" dir="ltr" className="text-cyan-300 hover:underline">+962 79 9150175</a></div>
+              <div>{t.locationLabel}: {t.locationValue}</div>
             </div>
           </div>
 
