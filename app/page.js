@@ -79,6 +79,30 @@ export default function ThamrahPremium() {
  
 		const [lang, setLang] = useState("en");
 		const isArabic = lang === "ar";
+		const [menuOpen, setMenuOpen] = useState(false);
+		const [form, setForm] = useState({ name: "", email: "", company: "", message: "", website: "" });
+		const [formStatus, setFormStatus] = useState("idle"); // idle | sending | sent | error
+
+		const updateField = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }));
+
+		const handleSubmit = async (e) => {
+			e.preventDefault();
+			setFormStatus("sending");
+			try {
+				const res = await fetch("/api/contact", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: JSON.stringify({ ...form, lang }),
+				});
+				if (!res.ok) throw new Error("send failed");
+				setFormStatus("sent");
+				setForm({ name: "", email: "", company: "", message: "", website: "" });
+			} catch {
+				setFormStatus("error");
+			}
+		};
+
+		const inquiryText = `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\n\n${form.message}`;
 
 		useEffect(() => {
  		 	const elements = document.querySelectorAll(".reveal");
@@ -238,6 +262,12 @@ export default function ThamrahPremium() {
       company: "Company Name",
       message: "Tell us about your IT needs",
       send: "Send Inquiry",
+      sending: "Sending...",
+      sent: "Thank you! Your inquiry has been sent. We'll get back to you within one business day.",
+      sendError: "Sorry, your message couldn't be sent. Please reach us directly instead:",
+      sendViaWhatsapp: "Send via WhatsApp",
+      sendViaEmail: "Send via email",
+      menu: "Menu",
       locationTitle: "Our Location",
       locationText:
         "Serving businesses in Amman and across Jordan with remote and on-site IT support.",
@@ -387,6 +417,12 @@ export default function ThamrahPremium() {
       company: "اسم الشركة",
       message: "أخبرنا عن احتياجاتك التقنية",
       send: "إرسال الطلب",
+      sending: "جارٍ الإرسال...",
+      sent: "شكرًا لك! تم إرسال طلبك، وسنتواصل معك خلال يوم عمل واحد.",
+      sendError: "عذرًا، تعذّر إرسال رسالتك. يمكنك التواصل معنا مباشرة:",
+      sendViaWhatsapp: "أرسل عبر واتساب",
+      sendViaEmail: "أرسل عبر البريد الإلكتروني",
+      menu: "القائمة",
       locationTitle: "موقعنا",
       locationText:
         "نخدم الشركات في عمّان وعبر الأردن من خلال دعم تقني عن بُعد وميداني.",
@@ -402,33 +438,71 @@ export default function ThamrahPremium() {
 
   const t = content[lang];
 
+  const navLinks = [
+    ["#services", "Services", "الخدمات"],
+    ["#about", "About", "من نحن"],
+    ["#process", "Process", "العملية"],
+    ["#packages", "Packages", "الباقات"],
+    ["#faq", "FAQ", "الأسئلة"],
+    ["#contact", "Contact", "تواصل"],
+  ];
+
   return (
     <div dir={isArabic ? "rtl" : "ltr"} className="min-h-screen bg-slate-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Thamrah Logo" className="h-11 w-auto object-contain"/>
+            <img src="/logo.png" alt="Thamrah Logo" className="h-9 w-auto object-contain sm:h-11"/>
             <div>
               <div className="text-lg font-bold tracking-[0.18em]">{t.brand}</div>
-              <div className="text-xs uppercase tracking-[0.22em] text-slate-400">{t.sub}</div>
+              <div className="whitespace-nowrap text-[10px] uppercase tracking-[0.14em] text-slate-400 sm:text-xs sm:tracking-[0.22em]">{t.sub}</div>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 md:gap-4">
             <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
-              <a href="#services" className="transition hover:text-white">{isArabic ? "الخدمات" : "Services"}</a>
-              <a href="#about" className="transition hover:text-white">{isArabic ? "من نحن" : "About"}</a>
-              <a href="#process" className="transition hover:text-white">{isArabic ? "العملية" : "Process"}</a>
-              <a href="#packages" className="transition hover:text-white">{isArabic ? "الباقات" : "Packages"}</a>
-              <a href="#faq" className="transition hover:text-white">{isArabic ? "الأسئلة" : "FAQ"}</a>
-              <a href="#contact" className="transition hover:text-white">{isArabic ? "تواصل" : "Contact"}</a>
+              {navLinks.map(([href, en, ar]) => (
+                <a key={href} href={href} className="transition hover:text-white">{isArabic ? ar : en}</a>
+              ))}
             </nav>
-         	  <button onClick={() => setLang(lang === "en" ? "ar" : "en")} 
-			className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:bg-white/10">
+         	  <button onClick={() => setLang(lang === "en" ? "ar" : "en")}
+			className="flex items-center gap-2 whitespace-nowrap rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white transition hover:bg-white/10 sm:px-4">
  			 🌐 {lang === "en" ? "عربي" : "EN"}
 			</button>
+            <button
+              type="button"
+              onClick={() => setMenuOpen((open) => !open)}
+              aria-label={t.menu}
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10 md:hidden"
+            >
+              {menuOpen ? (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">
+                  <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+                </svg>
+              ) : (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">
+                  <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
+        {menuOpen ? (
+          <nav id="mobile-menu" className="border-t border-white/10 bg-slate-950/95 px-6 py-4 md:hidden">
+            {navLinks.map(([href, en, ar]) => (
+              <a
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-xl px-3 py-3 text-base text-slate-200 transition hover:bg-white/5 hover:text-white"
+              >
+                {isArabic ? ar : en}
+              </a>
+            ))}
+          </nav>
+        ) : null}
       </header>
 
       <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 text-center reveal">
@@ -627,17 +701,35 @@ export default function ThamrahPremium() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-slate-900/65 p-6 backdrop-blur-xl">
-            <form className="grid gap-4">
-              <div className="grid gap-4 md:grid-cols-2">
-                <input type="text" placeholder={t.name} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
-                <input type="email" placeholder={t.email} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
+            {formStatus === "sent" ? (
+              <div role="status" className="flex min-h-[320px] flex-col items-center justify-center text-center">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400/20 to-green-400/20 text-2xl text-green-300">✓</div>
+                <p className="mt-5 max-w-md leading-8 text-slate-200">{t.sent}</p>
               </div>
-              <input type="text" placeholder={t.company} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
-              <textarea rows={6} placeholder={t.message} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
-              <button type="button" className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-cyan-400 to-green-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5">
-                {t.send}
+            ) : (
+            <form onSubmit={handleSubmit} className="grid gap-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <input type="text" name="name" required maxLength={100} value={form.name} onChange={updateField("name")} placeholder={t.name} aria-label={t.name} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
+                <input type="email" name="email" required maxLength={150} value={form.email} onChange={updateField("email")} placeholder={t.email} aria-label={t.email} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
+              </div>
+              <input type="text" name="company" maxLength={150} value={form.company} onChange={updateField("company")} placeholder={t.company} aria-label={t.company} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
+              <textarea rows={6} name="message" required maxLength={3000} value={form.message} onChange={updateField("message")} placeholder={t.message} aria-label={t.message} className="rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 placeholder:text-slate-500 outline-none focus:border-cyan-300" />
+              {/* Hidden field to catch spam bots; real visitors never see it */}
+              <input type="text" name="website" value={form.website} onChange={updateField("website")} tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+              <button type="submit" disabled={formStatus === "sending"} className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-cyan-400 to-green-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 disabled:cursor-wait disabled:opacity-70">
+                {formStatus === "sending" ? t.sending : t.send}
               </button>
+              {formStatus === "error" ? (
+                <div role="alert" className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-100">
+                  <p>{t.sendError}</p>
+                  <div className="mt-3 flex flex-wrap gap-3">
+                    <a href={`https://wa.me/962799150175?text=${encodeURIComponent(inquiryText)}`} target="_blank" rel="noreferrer" className="rounded-xl bg-green-500 px-4 py-2 font-semibold text-white">{t.sendViaWhatsapp}</a>
+                    <a href={`mailto:info@thamrahpro.com?subject=${encodeURIComponent("Website inquiry - " + form.name)}&body=${encodeURIComponent(inquiryText)}`} className="rounded-xl border border-white/20 px-4 py-2 font-semibold text-white">{t.sendViaEmail}</a>
+                  </div>
+                </div>
+              ) : null}
             </form>
+            )}
           </div>
         </div>
       </section>
