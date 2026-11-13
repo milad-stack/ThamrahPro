@@ -17,9 +17,9 @@ export const content = {
     legalName: 'Thamrah Professionals for Information Technology',
     legalNameOther: 'ثمرة المحترفون لتكنولوجيا المعلومات',
     meta: {
-      title: 'Thamrah Pro | IT Infrastructure, Cybersecurity & CCTV in Jordan',
+      title: 'Thamrah Pro | IT Infrastructure, Data Centers, Cybersecurity & Surveillance in Jordan',
       description:
-        'Thamrah Professionals for Information Technology designs, builds and supports networks, servers, cloud, cybersecurity, CCTV and access control for organizations across Jordan. One accountable partner, fixed scope in writing.',
+        'Thamrah Professionals for Information Technology designs, builds and supports IT infrastructure, data centers, networks, cloud, cybersecurity and surveillance solutions for organizations across Jordan. One accountable partner, fixed scope in writing.',
     },
     nav: [
       ['#services', 'Services'],
@@ -34,16 +34,16 @@ export const content = {
     hero: {
       kicker: 'IT & security infrastructure · Jordan',
       title: 'Technology that works for your business.',
-      text: 'We design, build and support your networks, servers, cloud, cybersecurity, CCTV and access control as one system, delivered by one accountable team.',
+      text: 'We design, build and support your IT infrastructure and data centers, networks, cloud, cybersecurity and surveillance solutions as one system, delivered by one accountable team.',
       cta1: 'Book a free site assessment',
       cta2: 'WhatsApp us',
       chips: ['Fixed scope in writing', 'Documented and handed over', 'Arabic and English'],
     },
     trust: [
-      ['16+ years', 'of IT delivery experience across our founders'],
-      ['PMP-certified', 'project management on every engagement'],
-      ['50+ people', 'led by our co-founder on a hospital information system rollout'],
-      ['All of Jordan', 'remote-first support with on-site engineers'],
+      ['Infrastructure', 'Data centers, server rooms and networks'],
+      ['Cybersecurity', 'Protection for users, devices and data'],
+      ['Surveillance', 'Video surveillance and access control'],
+      ['All of Jordan', 'Remote-first support with on-site engineers'],
     ],
     sectors: {
       kicker: 'Who we serve',
@@ -76,7 +76,7 @@ export const content = {
           points: [
             'Campus Wi-Fi and network upgrades',
             'Server and storage maintenance (HPE, Dell)',
-            'CCTV and access control for safer campuses',
+            'Surveillance solutions and access control for safer campuses',
           ],
         },
         {
@@ -84,7 +84,7 @@ export const content = {
           name: 'Manufacturing & warehousing',
           sub: 'Factories, storage facilities and yards',
           points: [
-            'CCTV covering loading bays, stock and perimeters',
+            'Surveillance covering loading bays, stock and perimeters',
             'Access control and biometric attendance',
             'Reliable networks for production floors and warehouses',
           ],
@@ -96,23 +96,23 @@ export const content = {
           points: [
             'Reliable networks for clinical systems',
             'Data protection and tested backups',
-            'Experience with hospital information system rollouts',
+            'Infrastructure that supports hospital information systems',
           ],
         },
       ],
     },
     services: {
       kicker: 'What we do',
-      title: 'Infrastructure, security and support in one team',
+      title: 'Infrastructure, data centers, security and support in one team',
       practices: [
         {
           icon: 'infrastructure',
-          name: 'IT infrastructure',
+          name: 'Infrastructure & data centers',
           groups: [
+            ['Data centers and server rooms', ['Data center and server room design and build', 'Racks, power (UPS) and cooling', 'Virtualization and server consolidation', 'Environmental monitoring']],
             ['Network infrastructure', ['LAN and Wi-Fi design and build', 'Structured cabling', 'Firewalls, VPN and remote access']],
             ['Servers, storage and backup', ['Servers and storage systems', 'Backup and disaster recovery', 'Restores tested on a schedule']],
             ['Cloud and email', ['Microsoft 365 and Google Workspace', 'Email migration', 'Identity and licence management']],
-            ['Hardware supply', ['Servers, PCs and laptops', 'Networking equipment', 'Genuine products with full warranty, installed and configured']],
           ],
         },
         {
@@ -120,7 +120,7 @@ export const content = {
           name: 'Security',
           groups: [
             ['Cybersecurity', ['Security assessment', 'Next-generation firewall and endpoint protection', 'MFA and access reviews', 'Staff awareness']],
-            ['Physical security', ['CCTV on enterprise video management', 'Access control and biometrics', 'Facial and licence-plate recognition', 'Site survey, design and maintenance']],
+            ['Surveillance solutions', ['Video surveillance on enterprise video management platforms', 'Access control and biometrics', 'Facial and licence-plate recognition', 'Site survey, design and maintenance']],
           ],
         },
         {
@@ -129,7 +129,7 @@ export const content = {
           groups: [
             ['Managed IT services', ['Proactive monitoring', 'Patch and update management', 'Asset and licence tracking', 'Joiners and leavers']],
             ['Technical support', ['Help desk by phone, WhatsApp and email', 'Remote-first resolution', 'On-site engineers', 'Named account manager']],
-            ['IT consulting and PMO', ['Assessments and roadmaps', 'Vendor selection and budgeting', 'Project and PMO services based on PMI practice']],
+            ['IT consulting and PMO', ['Assessments and roadmaps', 'Vendor selection and budgeting', 'Project and PMO services with structured governance']],
           ],
         },
       ],
@@ -151,7 +151,7 @@ export const content = {
       items: [
         {
           name: 'Project delivery',
-          text: 'For a defined job: a new network, CCTV system, server room or migration.',
+          text: 'For a defined job: a new data center or server room, network, surveillance system or migration.',
           points: ['Site survey and written assessment', 'Fixed scope, schedule and price', 'Supply, installation and configuration', 'Documentation and handover'],
           cta: 'Request a proposal',
           service: 'project',
@@ -177,7 +177,7 @@ export const content = {
       kicker: 'Why Thamrah Pro',
       title: 'One partner. One plan. Documented, handed over, and supported.',
       items: [
-        ['One accountable team', 'Networks, security, CCTV and support from one company, so nothing falls between contractors.'],
+        ['One accountable team', 'Infrastructure, security, surveillance and support from one company, so nothing falls between contractors.'],
         ['Fixed scope, in writing', 'You know what will be delivered, by when and at what cost before work begins.'],
         ['You own everything', 'Every password, configuration file and diagram is handed over to your team.'],
         ['Vendor-neutral', 'We recommend what fits your needs and budget, not what we are told to sell.'],
@@ -192,27 +192,25 @@ export const content = {
           initials: 'MA',
           name: 'Milad Al-Awawdah',
           role: 'Founder & CEO',
-          bio: 'Leads Thamrah Pro’s direction and its software solutions.',
         },
         {
           initials: 'AA',
           name: 'Abdelhalim Alazab',
-          role: 'Co-Founder & PMO, PMP',
-          bio: 'Over 16 years in IT and project management, including leading a team of more than 50 people on the Hakeem hospital information system rollout at Al-Basheer Hospital. Runs every Thamrah Pro engagement on PMI practice.',
+          role: 'Co-Founder & PMO',
         },
       ],
     },
     offer: {
       kicker: 'Free site assessment',
       title: 'Not sure where to start? We’ll assess your site for free.',
-      text: 'An engineer reviews your network, security and CCTV, then sends you a written summary of risks ranked by priority. No obligation.',
+      text: 'An engineer reviews your infrastructure, security and surveillance, then sends you a written summary of risks ranked by priority. No obligation.',
       cta: 'Book your free assessment',
     },
     faq: {
       kicker: 'FAQ',
       title: 'Questions we hear often',
       items: [
-        ['Do you supply hardware, or only install it?', 'Both. We supply genuine servers, PCs, networking, CCTV and access-control equipment with the full manufacturer warranty, then install, configure and support it.'],
+        ['Do you design and build data centers and server rooms?', 'Yes. We design, build and support data centers and server rooms end to end: racks, cabling, power, cooling, virtualization and monitoring, using genuine equipment with the full manufacturer warranty.'],
         ['Can you work with the systems and vendors we already have?', 'Yes. We are vendor-neutral. We start from what you have, keep what works, and recommend changes only where they solve a real problem.'],
         ['How do I get support when something breaks?', 'By phone, WhatsApp or email. Most issues are resolved remotely; when a site visit is needed, an engineer comes to you. Support-plan clients get a named account manager.'],
         ['How do you price your work?', 'Every job is quoted for your site and requirements. After the assessment you receive a written proposal with a fixed scope, schedule and price, agreed before any work begins.'],
@@ -249,9 +247,9 @@ export const content = {
           ['network', 'Network and Wi-Fi'],
           ['servers', 'Servers, storage and backup'],
           ['cyber', 'Cybersecurity'],
-          ['cctv', 'CCTV and access control'],
+          ['surveillance', 'Surveillance solutions and access control'],
           ['cloud', 'Cloud and email'],
-          ['hardware', 'Hardware supply'],
+          ['datacenter', 'Data centers and server rooms'],
           ['other', 'Something else'],
         ],
       },
@@ -272,9 +270,9 @@ export const content = {
     legalName: 'ثمرة المحترفون لتكنولوجيا المعلومات',
     legalNameOther: 'Thamrah Professionals for Information Technology',
     meta: {
-      title: 'ثمرة المحترفون | البنية التحتية لتقنية المعلومات والأمن السيبراني وكاميرات المراقبة في الأردن',
+      title: 'ثمرة المحترفون | البنية التحتية ومراكز البيانات والأمن السيبراني وحلول المراقبة في الأردن',
       description:
-        'تصمّم ثمرة المحترفون لتكنولوجيا المعلومات وتنفّذ وتدعم الشبكات والخوادم والحلول السحابية والأمن السيبراني وأنظمة المراقبة والتحكم بالدخول للمؤسسات في جميع أنحاء الأردن. شريك واحد مسؤول ونطاق عمل مكتوب.',
+        'تصمّم ثمرة المحترفون لتكنولوجيا المعلومات وتنفّذ وتدعم البنية التحتية لتقنية المعلومات ومراكز البيانات والشبكات والحلول السحابية والأمن السيبراني وحلول المراقبة للمؤسسات في جميع أنحاء الأردن. شريك واحد مسؤول ونطاق عمل مكتوب.',
     },
     nav: [
       ['#services', 'الخدمات'],
@@ -289,15 +287,15 @@ export const content = {
     hero: {
       kicker: 'البنية التحتية لتقنية المعلومات والأمن · الأردن',
       title: 'تقنية تعمل لصالح أعمالك.',
-      text: 'نصمّم وننفّذ وندعم شبكاتك وخوادمك وحلولك السحابية وأمنك السيبراني وأنظمة المراقبة والتحكم بالدخول كمنظومة واحدة، يتولّاها فريق واحد مسؤول.',
+      text: 'نصمّم وننفّذ وندعم البنية التحتية لتقنية المعلومات ومراكز البيانات والشبكات والحلول السحابية والأمن السيبراني وحلول المراقبة كمنظومة واحدة، يتولّاها فريق واحد مسؤول.',
       cta1: 'احجز تقييمًا مجانيًا للموقع',
       cta2: 'تواصل عبر واتساب',
       chips: ['نطاق عمل محدد ومكتوب', 'توثيق كامل وتسليم', 'بالعربية والإنجليزية'],
     },
     trust: [
-      ['+16 عامًا', 'من الخبرة في تنفيذ مشاريع تقنية المعلومات لدى مؤسسينا'],
-      ['PMP', 'إدارة مشاريع معتمدة في كل تعاقد'],
-      ['+50 شخصًا', 'قادهم أحد مؤسسينا في تنفيذ نظام معلومات مستشفى'],
+      ['البنية التحتية', 'مراكز البيانات وغرف الخوادم والشبكات'],
+      ['الأمن السيبراني', 'حماية المستخدمين والأجهزة والبيانات'],
+      ['حلول المراقبة', 'المراقبة بالفيديو والتحكم بالدخول'],
       ['كل الأردن', 'دعم عن بُعد أولًا مع مهندسين في الموقع'],
     ],
     sectors: {
@@ -331,7 +329,7 @@ export const content = {
           points: [
             'ترقية الشبكات السلكية واللاسلكية في الحرم',
             'صيانة الخوادم وأنظمة التخزين (HPE وDell)',
-            'كاميرات المراقبة والتحكم بالدخول لحرم أكثر أمانًا',
+            'حلول المراقبة والتحكم بالدخول لحرم أكثر أمانًا',
           ],
         },
         {
@@ -339,7 +337,7 @@ export const content = {
           name: 'التصنيع والمستودعات',
           sub: 'المصانع ومنشآت التخزين والساحات',
           points: [
-            'كاميرات مراقبة تغطي أرصفة التحميل والمخزون والمحيط',
+            'حلول مراقبة تغطي أرصفة التحميل والمخزون والمحيط',
             'أنظمة التحكم بالدخول والحضور بالبصمة',
             'شبكات موثوقة لخطوط الإنتاج والمستودعات',
           ],
@@ -351,23 +349,23 @@ export const content = {
           points: [
             'شبكات موثوقة للأنظمة السريرية',
             'حماية البيانات ونسخ احتياطي مُختبَر',
-            'خبرة في تنفيذ أنظمة معلومات المستشفيات',
+            'بنية تحتية تدعم أنظمة معلومات المستشفيات',
           ],
         },
       ],
     },
     services: {
       kicker: 'ما نقدّمه',
-      title: 'البنية التحتية والأمن والدعم في فريق واحد',
+      title: 'البنية التحتية ومراكز البيانات والأمن والدعم في فريق واحد',
       practices: [
         {
           icon: 'infrastructure',
-          name: 'البنية التحتية لتقنية المعلومات',
+          name: 'البنية التحتية ومراكز البيانات',
           groups: [
+            ['مراكز البيانات وغرف الخوادم', ['تصميم وتنفيذ مراكز البيانات وغرف الخوادم', 'الخزائن والطاقة (UPS) والتبريد', 'المحاكاة الافتراضية ودمج الخوادم', 'المراقبة البيئية']],
             ['البنية التحتية للشبكات', ['تصميم وتنفيذ الشبكات السلكية واللاسلكية', 'التمديدات الهيكلية', 'الجدران النارية والشبكات الخاصة الافتراضية والوصول عن بُعد']],
             ['الخوادم والتخزين والنسخ الاحتياطي', ['الخوادم وأنظمة التخزين', 'النسخ الاحتياطي والتعافي من الكوارث', 'اختبار استعادة البيانات بشكل دوري']],
             ['الحلول السحابية والبريد', ['Microsoft 365 وGoogle Workspace', 'ترحيل البريد الإلكتروني', 'إدارة الهويات والتراخيص']],
-            ['توريد الأجهزة', ['الخوادم والحواسيب المكتبية والمحمولة', 'معدات الشبكات', 'منتجات أصلية بكفالة كاملة، مع التركيب والإعداد']],
           ],
         },
         {
@@ -375,7 +373,7 @@ export const content = {
           name: 'الأمن',
           groups: [
             ['الأمن السيبراني', ['تقييم الأمن', 'جدران الحماية من الجيل التالي وحماية الأجهزة الطرفية', 'التحقق متعدد العوامل ومراجعة الصلاحيات', 'توعية الموظفين']],
-            ['الأمن المادي', ['كاميرات المراقبة على أنظمة إدارة الفيديو المؤسسية', 'التحكم بالدخول وأنظمة البصمة', 'التعرّف على الوجوه ولوحات المركبات', 'المسح الميداني والتصميم والصيانة']],
+            ['حلول المراقبة', ['المراقبة بالفيديو على منصات إدارة الفيديو المؤسسية', 'التحكم بالدخول وأنظمة البصمة', 'التعرّف على الوجوه ولوحات المركبات', 'المسح الميداني والتصميم والصيانة']],
           ],
         },
         {
@@ -384,7 +382,7 @@ export const content = {
           groups: [
             ['خدمات تقنية المعلومات المُدارة', ['مراقبة استباقية', 'إدارة التحديثات والتصحيحات', 'تتبّع الأصول والتراخيص', 'تجهيز حسابات الموظفين الجدد والمغادرين']],
             ['الدعم الفني', ['مكتب مساعدة عبر الهاتف وواتساب والبريد', 'حل المشكلات عن بُعد أولًا', 'مهندسون في الموقع', 'مدير حساب مخصّص']],
-            ['الاستشارات التقنية وإدارة المشاريع', ['التقييمات وخرائط الطريق', 'اختيار الموردين وإعداد الميزانيات', 'خدمات إدارة المشاريع وفق ممارسات PMI']],
+            ['الاستشارات التقنية وإدارة المشاريع', ['التقييمات وخرائط الطريق', 'اختيار الموردين وإعداد الميزانيات', 'خدمات إدارة المشاريع بحوكمة منظّمة']],
           ],
         },
       ],
@@ -406,7 +404,7 @@ export const content = {
       items: [
         {
           name: 'تنفيذ المشاريع',
-          text: 'لمهمة محددة: شبكة جديدة، أو نظام مراقبة، أو غرفة خوادم، أو ترحيل أنظمة.',
+          text: 'لمهمة محددة: مركز بيانات أو غرفة خوادم جديدة، أو شبكة، أو نظام مراقبة، أو ترحيل أنظمة.',
           points: ['مسح ميداني وتقييم مكتوب', 'نطاق وجدول زمني وسعر محدد', 'التوريد والتركيب والإعداد', 'التوثيق والتسليم'],
           cta: 'اطلب عرضًا',
           service: 'project',
@@ -432,7 +430,7 @@ export const content = {
       kicker: 'لماذا ثمرة المحترفون',
       title: 'شريك واحد. خطة واحدة. توثيق وتسليم ودعم.',
       items: [
-        ['فريق واحد مسؤول', 'الشبكات والأمن والمراقبة والدعم من شركة واحدة، فلا يضيع شيء بين المقاولين.'],
+        ['فريق واحد مسؤول', 'البنية التحتية والأمن والمراقبة والدعم من شركة واحدة، فلا يضيع شيء بين المقاولين.'],
         ['نطاق محدد ومكتوب', 'تعرف ما سيُنفَّذ ومتى وبأي تكلفة قبل بدء العمل.'],
         ['كل شيء ملكك', 'نسلّم فريقك جميع كلمات المرور وملفات الإعداد والمخططات.'],
         ['حياد تجاه الموردين', 'نوصي بما يناسب احتياجاتك وميزانيتك، لا بما يُطلب منا بيعه.'],
@@ -447,27 +445,25 @@ export const content = {
           initials: 'م ع',
           name: 'ميلاد العواودة',
           role: 'المؤسس والرئيس التنفيذي',
-          bio: 'يقود توجّه ثمرة المحترفون وحلولها البرمجية.',
         },
         {
           initials: 'ع ع',
           name: 'عبدالحليم العزب',
-          role: 'الشريك المؤسس – مكتب إدارة المشاريع، PMP',
-          bio: 'أكثر من 16 عامًا في تقنية المعلومات وإدارة المشاريع، من بينها قيادة فريق يضم أكثر من 50 شخصًا في تنفيذ نظام حكيم لمعلومات المستشفيات في مستشفى البشير. يدير كل مشاريع ثمرة المحترفون وفق ممارسات PMI.',
+          role: 'الشريك المؤسس – مكتب إدارة المشاريع',
         },
       ],
     },
     offer: {
       kicker: 'تقييم مجاني للموقع',
       title: 'لا تعرف من أين تبدأ؟ نقيّم موقعك مجانًا.',
-      text: 'يراجع أحد مهندسينا شبكتك وأمنك وأنظمة المراقبة، ثم يرسل لك ملخصًا مكتوبًا بالمخاطر مرتبة حسب الأولوية، دون أي التزام.',
+      text: 'يراجع أحد مهندسينا بنيتك التحتية وأمنك وحلول المراقبة لديك، ثم يرسل لك ملخصًا مكتوبًا بالمخاطر مرتبة حسب الأولوية، دون أي التزام.',
       cta: 'احجز تقييمك المجاني',
     },
     faq: {
       kicker: 'الأسئلة الشائعة',
       title: 'أسئلة نسمعها كثيرًا',
       items: [
-        ['هل تورّدون الأجهزة أم تقومون بالتركيب فقط؟', 'الاثنين معًا. نورّد خوادم وحواسيب ومعدات شبكات وكاميرات مراقبة وأنظمة تحكم بالدخول أصلية بكفالة المصنّع الكاملة، ثم نركّبها ونُعدّها وندعمها.'],
+        ['هل تصمّمون وتنفّذون مراكز البيانات وغرف الخوادم؟', 'نعم. نصمّم وننفّذ وندعم مراكز البيانات وغرف الخوادم بالكامل: الخزائن والتمديدات والطاقة والتبريد والمحاكاة الافتراضية والمراقبة، باستخدام معدات أصلية بكفالة المصنّع الكاملة.'],
         ['هل يمكنكم العمل مع الأنظمة والموردين الحاليين لدينا؟', 'نعم. نحن محايدون تجاه الموردين، نبدأ مما لديك ونحتفظ بما يعمل جيدًا، ونوصي بالتغيير فقط حيث يحل مشكلة حقيقية.'],
         ['كيف أحصل على الدعم عند حدوث عطل؟', 'عبر الهاتف أو واتساب أو البريد الإلكتروني. نحل معظم المشكلات عن بُعد، وعند الحاجة إلى زيارة ميدانية يأتيك مهندس إلى الموقع. ويحصل عملاء خطط الدعم على مدير حساب مخصّص.'],
         ['كيف تحددون أسعار أعمالكم؟', 'نُسعّر كل مهمة وفق موقعك ومتطلباتك. بعد التقييم تستلم عرضًا مكتوبًا بنطاق وجدول زمني وسعر محدد، يُتفق عليه قبل بدء أي عمل.'],
@@ -504,9 +500,9 @@ export const content = {
           ['network', 'الشبكات السلكية واللاسلكية'],
           ['servers', 'الخوادم والتخزين والنسخ الاحتياطي'],
           ['cyber', 'الأمن السيبراني'],
-          ['cctv', 'كاميرات المراقبة والتحكم بالدخول'],
+          ['surveillance', 'حلول المراقبة والتحكم بالدخول'],
           ['cloud', 'الحلول السحابية والبريد'],
-          ['hardware', 'توريد الأجهزة'],
+          ['datacenter', 'مراكز البيانات وغرف الخوادم'],
           ['other', 'أمر آخر'],
         ],
       },
