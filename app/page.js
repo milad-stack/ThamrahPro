@@ -336,7 +336,7 @@ export default function ThamrahPremium() {
       aboutTitle: "من نحن",
       aboutHeading: "شركة تقنية حديثة بعقلية احترافية",
       aboutText:
-        "تساعد ثمرة المهنية لتكنولوجيا المعلومات الشركات على بناء بيئات تقنية موثوقة وآمنة وعملية تدعم العمليات اليومية والنمو طويل المدى.",
+        "تساعد ثمرة المحترفون لتكنولوجيا المعلومات الشركات على بناء بيئات تقنية موثوقة وآمنة وعملية تدعم العمليات اليومية والنمو طويل المدى.",
       whyTitle: "لماذا ثمرة",
       whyHeading: "دعم تقني سهل الوصول ومناسب وجاهز للأعمال",
       whyText:
@@ -445,7 +445,7 @@ export default function ThamrahPremium() {
       whatsapp: "واتساب",
       social: ["فيسبوك", "لينكدإن", "إنستغرام"],
       footer:
-        "© 2026 ثمرة المهنية لتكنولوجيا المعلومات. جميع الحقوق محفوظة.",
+        "© 2026 ثمرة المحترفون لتكنولوجيا المعلومات. جميع الحقوق محفوظة.",
     },
   };
 
@@ -464,8 +464,8 @@ export default function ThamrahPremium() {
     <div dir={isArabic ? "rtl" : "ltr"} className="min-h-screen bg-slate-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
-          <a href="#" aria-label="Thamrah Professionals for Information Technology" className="flex shrink-0 items-center rounded-xl bg-white px-2.5 py-1.5 shadow-sm">
-            <img src="/logo-header.png" alt="Thamrah Professionals for Information Technology" width="140" height="40" className="h-8 w-auto sm:h-9" />
+          <a href="#" className="flex shrink-0 items-center">
+            <img src="/logo.svg" alt={isArabic ? "ثمرة المحترفون لتكنولوجيا المعلومات" : "Thamrah Professionals for Information Technology"} width="176" height="40" className="h-9 w-auto sm:h-10" />
           </a>
 
           <div className="flex items-center gap-3 md:gap-4">
