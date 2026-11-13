@@ -27,6 +27,8 @@ export async function POST(request) {
   const name = String(data.name || "").trim().slice(0, 100);
   const email = String(data.email || "").trim().slice(0, 150);
   const company = String(data.company || "").trim().slice(0, 150);
+  const phone = String(data.phone || "").trim().slice(0, 30);
+  const service = String(data.serviceLabel || data.service || "").trim().slice(0, 80);
   const message = String(data.message || "").trim().slice(0, 3000);
   const lang = data.lang === "ar" ? "Arabic" : "English";
 
@@ -53,12 +55,14 @@ export async function POST(request) {
     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
     <p><strong>Company:</strong> ${escapeHtml(company || "-")}</p>
+    <p><strong>Phone:</strong> ${escapeHtml(phone || "-")}</p>
+    <p><strong>Service:</strong> ${escapeHtml(service || "-")}</p>
     <p><strong>Site language:</strong> ${lang}</p>
     <p><strong>Message:</strong></p>
     <p style="white-space:pre-wrap">${escapeHtml(message)}</p>
   `;
 
-  const text = `New website inquiry\n\nName: ${name}\nEmail: ${email}\nCompany: ${company || "-"}\nSite language: ${lang}\n\n${message}`;
+  const text = `New website inquiry\n\nName: ${name}\nEmail: ${email}\nCompany: ${company || "-"}\nPhone: ${phone || "-"}\nService: ${service || "-"}\nSite language: ${lang}\n\n${message}`;
 
   try {
     const res = await fetch("https://api.resend.com/emails", {
@@ -71,7 +75,7 @@ export async function POST(request) {
         from,
         to: [to],
         reply_to: email,
-        subject: `Website inquiry: ${name}${company ? ` (${company})` : ""}`,
+        subject: `Website inquiry${service ? ` [${service}]` : ""}: ${name}${company ? ` (${company})` : ""}`,
         html,
         text,
       }),
