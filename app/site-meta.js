@@ -54,8 +54,7 @@ export function organizationJsonLd() {
     knowsLanguage: ['ar', 'en'],
     sameAs: [
       'https://www.facebook.com/ThamrahPro',
-      'https://www.linkedin.com/company/thamrahpro',
-      'https://instagram.com/thamrahpro',
+      'https://www.linkedin.com/company/thamrahpro/',
     ],
   };
 }
