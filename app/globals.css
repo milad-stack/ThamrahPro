@@ -23,11 +23,11 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Scroll animation (hidden state) */
+/* Scroll animation (hidden state): short and subtle so sections never look empty */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+  transform: translateY(16px);
+  transition: opacity 0.45s ease-out, transform 0.45s ease-out;
 }
 
 /* When visible */
@@ -37,3 +37,17 @@ body {
 }
 
 
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Hero background: subtle tech grid fading out toward the edges */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
