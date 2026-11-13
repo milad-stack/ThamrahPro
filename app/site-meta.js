@@ -52,10 +52,6 @@ export function organizationJsonLd() {
     address: { '@type': 'PostalAddress', addressLocality: 'Amman', addressCountry: 'JO' },
     areaServed: { '@type': 'Country', name: 'Jordan' },
     knowsLanguage: ['ar', 'en'],
-    founder: [
-      { '@type': 'Person', name: 'Milad Al-Awawdah', jobTitle: 'Founder & CEO' },
-      { '@type': 'Person', name: 'Abdelhalim Alazab', jobTitle: 'Co-Founder & PMO' },
-    ],
     sameAs: [
       'https://www.facebook.com/ThamrahPro',
       'https://www.linkedin.com/company/thamrahpro',

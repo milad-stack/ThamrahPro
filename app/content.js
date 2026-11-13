@@ -184,22 +184,6 @@ export const content = {
         ['Local and bilingual', 'Based in Jordan, working in Arabic and English, reachable when it counts.'],
       ],
     },
-    founders: {
-      kicker: 'Leadership',
-      title: 'The people accountable for your project',
-      people: [
-        {
-          initials: 'MA',
-          name: 'Milad Al-Awawdah',
-          role: 'Founder & CEO',
-        },
-        {
-          initials: 'AA',
-          name: 'Abdelhalim Alazab',
-          role: 'Co-Founder & PMO',
-        },
-      ],
-    },
     offer: {
       kicker: 'Free site assessment',
       title: 'Not sure where to start? We’ll assess your site for free.',
@@ -435,22 +419,6 @@ export const content = {
         ['كل شيء ملكك', 'نسلّم فريقك جميع كلمات المرور وملفات الإعداد والمخططات.'],
         ['حياد تجاه الموردين', 'نوصي بما يناسب احتياجاتك وميزانيتك، لا بما يُطلب منا بيعه.'],
         ['محليون وثنائيو اللغة', 'مقرّنا الأردن، نعمل بالعربية والإنجليزية، ونكون حاضرين عندما تحتاجنا.'],
-      ],
-    },
-    founders: {
-      kicker: 'القيادة',
-      title: 'الأشخاص المسؤولون عن مشروعك',
-      people: [
-        {
-          initials: 'م ع',
-          name: 'ميلاد العواودة',
-          role: 'المؤسس والرئيس التنفيذي',
-        },
-        {
-          initials: 'ع ع',
-          name: 'عبدالحليم العزب',
-          role: 'الشريك المؤسس – مكتب إدارة المشاريع',
-        },
       ],
     },
     offer: {

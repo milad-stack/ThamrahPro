@@ -280,7 +280,7 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* WHY + FOUNDERS */}
+        {/* WHY */}
         <section id="about" className="bg-mist py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <SectionTitle kicker={t.why.kicker} title={t.why.title} />
@@ -297,26 +297,6 @@ export default function Site({ locale }) {
               })}
             </div>
 
-            <div className="mt-20">
-              <SectionTitle kicker={t.founders.kicker} title={t.founders.title} />
-              <div className="mt-10 grid gap-6 md:grid-cols-2">
-                {t.founders.people.map((person) => (
-                  <article key={person.name} className="flex items-center gap-5 rounded-2xl bg-white p-6 sm:p-7">
-                    <span
-                      className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-navy text-lg font-semibold text-white"
-                      aria-hidden="true"
-                    >
-                      {person.initials}
-                    </span>
-                    <div>
-                      <h3 className="text-lg font-semibold text-navy">{person.name}</h3>
-                      <p className="text-sm font-medium text-brand-teal">{person.role}</p>
-                      {person.bio ? <p className="mt-3 text-sm leading-6 text-slate2">{person.bio}</p> : null}
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
 
