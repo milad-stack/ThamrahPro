@@ -1,10 +1,4 @@
-// Receives inquiries from the website contact form and emails them via Resend.
-// Required environment variable (set in Vercel → Settings → Environment Variables):
-//   RESEND_API_KEY      API key from https://resend.com
-// Optional:
-//   CONTACT_TO_EMAIL    where inquiries go (default: info@thamrahpro.com)
-//   CONTACT_FROM_EMAIL  sender address on a domain verified in Resend
-//                       (default: Thamrah Pro Website <website@thamrahpro.com>)
+// env: RESEND_API_KEY (required), CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL
 
 const escapeHtml = (value) =>
   String(value)
@@ -32,7 +26,7 @@ export async function POST(request) {
   const message = String(data.message || "").trim().slice(0, 3000);
   const lang = data.lang === "ar" ? "Arabic" : "English";
 
-  // Spam bots fill the hidden "website" field; pretend success and drop it.
+  // honeypot
   if (data.website) {
     return Response.json({ ok: true });
   }

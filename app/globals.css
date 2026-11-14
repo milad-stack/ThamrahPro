@@ -13,12 +13,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Arabic pages use IBM Plex Sans Arabic everywhere */
 html[lang='ar'] body {
   font-family: var(--font-plex-arabic), Tahoma, Arial, sans-serif;
 }
 
-/* Kicker: small bold caps line above section titles */
 .kicker {
   font-size: 0.75rem;
   font-weight: 700;
@@ -37,14 +35,12 @@ html[lang='ar'] .kicker {
   color: transparent;
 }
 
-/* Brand device: thin circuit traces on navy at low opacity */
 .circuit-bg {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='160' viewBox='0 0 240 160'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 130 L60 90 L120 90'/%3E%3Ccircle cx='124' cy='90' r='4'/%3E%3Cpath d='M30 150 L80 110 L160 110'/%3E%3Ccircle cx='164' cy='110' r='4'/%3E%3Cpath d='M130 40 L170 10 L230 10'/%3E%3Ccircle cx='234' cy='10' r='4'/%3E%3Cpath d='M150 60 L190 30 L215 30'/%3E%3Ccircle cx='219' cy='30' r='4'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 480px 320px;
   opacity: 0.09;
 }
 
-/* FAQ accordion marker */
 details > summary {
   list-style: none;
 }

@@ -1,6 +1,3 @@
-// All site copy, English and Arabic. Voice follows the Thamrah Pro brand
-// guidelines: specific, plain, calm; no prices and no claims we can't prove.
-
 export const CONTACT = {
   email: 'info@thamrahpro.com',
   phoneDisplay: '+962 79 915 0175',
