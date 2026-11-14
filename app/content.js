@@ -1,5 +1,4 @@
-// All site copy, English and Arabic. Voice follows the Thamrah Pro brand
-// guidelines: specific, plain, calm; no prices and no claims we can't prove.
+// Site copy (EN + AR). Keep it plain: no prices, nothing we can't back up.
 
 export const CONTACT = {
   email: 'info@thamrahpro.com',
@@ -19,7 +18,7 @@ export const content = {
     meta: {
       title: 'Thamrah Pro | IT Infrastructure, Data Centers, Cybersecurity & Surveillance in Jordan',
       description:
-        'Thamrah Professionals for Information Technology designs, builds and supports IT infrastructure, data centers, networks, cloud, cybersecurity and surveillance solutions for organizations across Jordan. One accountable partner, fixed scope in writing.',
+        'Thamrah Professionals for Information Technology is an IT company in Amman. We design, install and look after networks, server rooms and data centers, cloud, cybersecurity and surveillance systems for organizations across Jordan.',
     },
     nav: [
       ['#services', 'Services'],
@@ -34,29 +33,29 @@ export const content = {
     hero: {
       kicker: 'IT & security infrastructure · Jordan',
       title: 'Technology that works for your business.',
-      text: 'We design, build and support your IT infrastructure and data centers, networks, cloud, cybersecurity and surveillance solutions as one system, delivered by one accountable team.',
+      text: 'We plan, install and look after the IT your business depends on: networks, server rooms and data centers, cloud, cybersecurity and surveillance. One team handles all of it, so you always know who to call.',
       cta1: 'Book a free site assessment',
       cta2: 'WhatsApp us',
-      chips: ['Fixed scope in writing', 'Documented and handed over', 'Arabic and English'],
+      chips: ['Scope agreed in writing', 'Full documentation at handover', 'We work in Arabic and English'],
     },
     trust: [
       ['Infrastructure', 'Data centers, server rooms and networks'],
       ['Cybersecurity', 'Protection for users, devices and data'],
       ['Surveillance', 'Video surveillance and access control'],
-      ['All of Jordan', 'Remote-first support with on-site engineers'],
+      ['All of Jordan', 'Remote support, with engineers on site when needed'],
     ],
     sectors: {
       kicker: 'Who we serve',
-      title: 'Built around the way your organization runs',
+      title: 'Different organizations, different priorities',
       items: [
         {
           icon: 'enterprise',
           name: 'Enterprise',
           sub: 'Multi-site companies and corporate offices',
           points: [
-            'Network and security standards across every branch',
-            'Projects run with PMO governance and regular reporting',
-            'Vendor-neutral design and documented handover',
+            'The same network and security standards at every branch',
+            'Projects run with proper PMO governance and regular progress reports',
+            'Vendor-neutral designs, fully documented when we hand over',
           ],
         },
         {
@@ -64,9 +63,9 @@ export const content = {
           name: 'SMB',
           sub: 'Growing businesses that need IT done properly',
           points: [
-            'One partner instead of several contractors',
-            'Managed support with a named contact',
-            'Security basics covered: backups, firewall, MFA',
+            'One partner instead of juggling several contractors',
+            'Ongoing support, with one person who knows your setup',
+            'The security basics done right: backups, firewall and MFA',
           ],
         },
         {
@@ -74,9 +73,9 @@ export const content = {
           name: 'Education',
           sub: 'Schools, academies and training centres',
           points: [
-            'Campus Wi-Fi and network upgrades',
-            'Server and storage maintenance (HPE, Dell)',
-            'Surveillance solutions and access control for safer campuses',
+            'Wi-Fi that holds up when every classroom is online',
+            'Server and storage maintenance for HPE and Dell systems',
+            'Surveillance and access control around the campus',
           ],
         },
         {
@@ -84,9 +83,9 @@ export const content = {
           name: 'Manufacturing & warehousing',
           sub: 'Factories, storage facilities and yards',
           points: [
-            'Surveillance covering loading bays, stock and perimeters',
+            'Surveillance over loading bays, stock areas and perimeters',
             'Access control and biometric attendance',
-            'Reliable networks for production floors and warehouses',
+            'Networks that keep working on the production floor',
           ],
         },
         {
@@ -94,16 +93,16 @@ export const content = {
           name: 'Healthcare',
           sub: 'Clinics, medical centres and hospitals',
           points: [
-            'Reliable networks for clinical systems',
-            'Data protection and tested backups',
-            'Infrastructure that supports hospital information systems',
+            'Stable networks for clinical and admin systems',
+            'Patient data protected, with backups that are actually tested',
+            'Infrastructure ready to run hospital information systems',
           ],
         },
       ],
     },
     services: {
       kicker: 'What we do',
-      title: 'Infrastructure, data centers, security and support in one team',
+      title: 'From the server room to the help desk',
       practices: [
         {
           icon: 'infrastructure',
@@ -136,77 +135,77 @@ export const content = {
     },
     process: {
       kicker: 'How we work',
-      title: 'Every job runs as a managed project',
+      title: 'We run every job as a proper project',
       youGet: 'You get',
       steps: [
-        ['Assess', 'We review your systems, network, security and workflows.', 'A written assessment with risks ranked by priority'],
-        ['Plan', 'We design the solution and delivery plan around your goals and budget.', 'Fixed scope, timeline and price, in writing'],
-        ['Implement', 'We supply, configure, integrate and test.', 'As-built documentation and admin access handed over'],
-        ['Support', 'We stay with what we deliver.', 'Agreed service levels, periodic reviews and health reports'],
+        ['Assess', 'We look at your systems, network and security, and at how your team actually works.', 'A written assessment, with the risks in order of priority'],
+        ['Plan', 'We design the solution around your goals and budget, and agree the plan with you.', 'Scope, timeline and price, fixed in writing'],
+        ['Implement', 'We supply the equipment, set it up, connect it to what you already have, and test it.', 'As-built documentation and full admin access'],
+        ['Support', 'We don’t disappear after handover.', 'Agreed response times, regular reviews and health reports'],
       ],
     },
     engagements: {
       kicker: 'Ways to work with us',
-      title: 'Choose the engagement that fits',
+      title: 'Three ways to work with us',
       items: [
         {
           name: 'Project delivery',
-          text: 'For a defined job: a new data center or server room, network, surveillance system or migration.',
+          text: 'When you have a specific job in mind: a new server room or data center, a network, a surveillance system or a migration.',
           points: ['Site survey and written assessment', 'Fixed scope, schedule and price', 'Supply, installation and configuration', 'Documentation and handover'],
           cta: 'Request a proposal',
           service: 'project',
         },
         {
           name: 'Managed IT support',
-          text: 'For organizations that want IT looked after month to month.',
+          text: 'When you’d rather someone else kept an eye on your IT every month.',
           points: ['Proactive monitoring and maintenance', 'Help desk by phone, WhatsApp and email', 'On-site visits when needed', 'Named account manager and periodic reviews'],
           cta: 'Discuss a support plan',
           service: 'managed',
         },
         {
           name: 'Assessment & advisory',
-          text: 'For decisions before you spend: audits, roadmaps and vendor selection.',
+          text: 'When you need a second opinion before spending: audits, roadmaps and vendor selection.',
           points: ['Network and security assessment', 'Risks ranked by priority', 'Roadmap and budget guidance', 'Vendor-neutral recommendations'],
           cta: 'Book an assessment',
           service: 'assessment',
         },
       ],
-      note: 'Every proposal is written for your site and requirements, with a fixed scope and price agreed before work starts.',
+      note: 'We write every proposal for your site specifically, and agree the scope and price with you before any work starts.',
     },
     why: {
       kicker: 'Why Thamrah Pro',
-      title: 'One partner. One plan. Documented, handed over, and supported.',
+      title: 'What you can expect from us',
       items: [
-        ['One accountable team', 'Infrastructure, security, surveillance and support from one company, so nothing falls between contractors.'],
-        ['Fixed scope, in writing', 'You know what will be delivered, by when and at what cost before work begins.'],
-        ['You own everything', 'Every password, configuration file and diagram is handed over to your team.'],
-        ['Vendor-neutral', 'We recommend what fits your needs and budget, not what we are told to sell.'],
-        ['Local and bilingual', 'Based in Jordan, working in Arabic and English, reachable when it counts.'],
+        ['One team, start to finish', 'Infrastructure, security, surveillance and support all come from us, so nothing gets lost between contractors.'],
+        ['No surprises on scope', 'Before we start, you know exactly what you’re getting, when, and what it costs.'],
+        ['It’s all yours', 'Passwords, configuration files and diagrams all go to your team. You’re never locked in to us.'],
+        ['We don’t push brands', 'We recommend what suits your needs and budget, not whatever a vendor wants us to sell.'],
+        ['Local, in both languages', 'We’re based in Amman and work in Arabic and English. When something breaks, you can reach an engineer by phone or WhatsApp.'],
       ],
     },
     offer: {
       kicker: 'Free site assessment',
-      title: 'Not sure where to start? We’ll assess your site for free.',
-      text: 'An engineer reviews your infrastructure, security and surveillance, then sends you a written summary of risks ranked by priority. No obligation.',
+      title: 'Not sure where to start? Let us take a look, for free.',
+      text: 'One of our engineers goes through your infrastructure, security and surveillance, then sends you a short written report with the risks in order of priority. There’s no obligation.',
       cta: 'Book your free assessment',
     },
     faq: {
       kicker: 'FAQ',
-      title: 'Questions we hear often',
+      title: 'Questions people ask us',
       items: [
-        ['Do you design and build data centers and server rooms?', 'Yes. We design, build and support data centers and server rooms end to end: racks, cabling, power, cooling, virtualization and monitoring, using genuine equipment with the full manufacturer warranty.'],
-        ['Can you work with the systems and vendors we already have?', 'Yes. We are vendor-neutral. We start from what you have, keep what works, and recommend changes only where they solve a real problem.'],
-        ['How do I get support when something breaks?', 'By phone, WhatsApp or email. Most issues are resolved remotely; when a site visit is needed, an engineer comes to you. Support-plan clients get a named account manager.'],
-        ['How do you price your work?', 'Every job is quoted for your site and requirements. After the assessment you receive a written proposal with a fixed scope, schedule and price, agreed before any work begins.'],
-        ['Do you work outside Amman?', 'Yes. We serve organizations across Jordan, with remote support and on-site visits.'],
-        ['Who owns the configurations and passwords?', 'You do. At handover you receive the documentation, diagrams, configuration files and admin credentials for everything we deliver.'],
-        ['Can we get documentation in Arabic?', 'Yes. We work and document in Arabic or English, whichever suits your team.'],
+        ['Do you design and build data centers and server rooms?', 'Yes, from the first drawing to ongoing support: racks, cabling, power, cooling, virtualization and monitoring. We only use genuine equipment with the full manufacturer warranty.'],
+        ['Can you work with the systems and vendors we already have?', 'Yes. We start from what you already have and keep whatever works. We only suggest changing something when it solves a real problem.'],
+        ['How do I get support when something breaks?', 'Call, WhatsApp or email us. We fix most issues remotely, and if it needs a visit, an engineer comes to you. Clients on a support plan also get a named account manager.'],
+        ['How do you price your work?', 'We quote each job for your site. After the assessment you get a written proposal with the scope, schedule and price, and nothing starts until you’ve agreed to it.'],
+        ['Do you work outside Amman?', 'Yes. We work with organizations all over Jordan, remotely and on site.'],
+        ['Who owns the configurations and passwords?', 'You do. At handover we give you the documentation, diagrams, configuration files and admin credentials for everything we set up.'],
+        ['Can we get documentation in Arabic?', 'Yes. We can work and write documentation in Arabic or English, whichever your team prefers.'],
       ],
     },
     contact: {
       kicker: 'Contact',
       title: 'Tell us what you need',
-      text: 'Book a free site assessment or ask for a proposal. We reply within one business day.',
+      text: 'Book a free site assessment or ask us for a proposal. We’ll get back to you within one business day.',
       emailLabel: 'Email',
       phoneLabel: 'Phone',
       locationLabel: 'Location',
@@ -220,7 +219,7 @@ export const content = {
         message: 'Tell us about your site and requirements',
         send: 'Send request',
         sending: 'Sending...',
-        sent: 'Thank you. Your request has been sent, and we’ll get back to you within one business day.',
+        sent: 'Thanks, we’ve got your request. Someone from our team will be in touch within one business day.',
         error: 'Sorry, your message couldn’t be sent. Please reach us directly instead:',
         viaWhatsapp: 'Send via WhatsApp',
         viaEmail: 'Send via email',
@@ -271,20 +270,20 @@ export const content = {
     hero: {
       kicker: 'البنية التحتية لتقنية المعلومات والأمن · الأردن',
       title: 'تقنية تعمل لصالح أعمالك.',
-      text: 'نصمّم وننفّذ وندعم البنية التحتية لتقنية المعلومات ومراكز البيانات والشبكات والحلول السحابية والأمن السيبراني وحلول المراقبة كمنظومة واحدة، يتولّاها فريق واحد مسؤول.',
+      text: 'نخطط وننفّذ ونتابع تقنية المعلومات التي تعتمد عليها أعمالك: الشبكات وغرف الخوادم ومراكز البيانات والحلول السحابية والأمن السيبراني وحلول المراقبة. فريق واحد يتولى كل ذلك، فتعرف دائمًا بمن تتصل.',
       cta1: 'احجز تقييمًا مجانيًا للموقع',
       cta2: 'تواصل عبر واتساب',
-      chips: ['نطاق عمل محدد ومكتوب', 'توثيق كامل وتسليم', 'بالعربية والإنجليزية'],
+      chips: ['نطاق عمل متفق عليه كتابيًا', 'توثيق كامل عند التسليم', 'نعمل بالعربية والإنجليزية'],
     },
     trust: [
       ['البنية التحتية', 'مراكز البيانات وغرف الخوادم والشبكات'],
       ['الأمن السيبراني', 'حماية المستخدمين والأجهزة والبيانات'],
       ['حلول المراقبة', 'المراقبة بالفيديو والتحكم بالدخول'],
-      ['كل الأردن', 'دعم عن بُعد أولًا مع مهندسين في الموقع'],
+      ['كل الأردن', 'دعم عن بُعد، ومهندسون في الموقع عند الحاجة'],
     ],
     sectors: {
       kicker: 'من نخدم',
-      title: 'حلول مبنية على طريقة عمل مؤسستك',
+      title: 'لكل مؤسسة أولوياتها',
       items: [
         {
           icon: 'enterprise',
@@ -340,7 +339,7 @@ export const content = {
     },
     services: {
       kicker: 'ما نقدّمه',
-      title: 'البنية التحتية ومراكز البيانات والأمن والدعم في فريق واحد',
+      title: 'من غرفة الخوادم إلى مكتب الدعم الفني',
       practices: [
         {
           icon: 'infrastructure',
@@ -373,18 +372,18 @@ export const content = {
     },
     process: {
       kicker: 'آلية العمل',
-      title: 'كل مهمة تُدار كمشروع',
+      title: 'نتعامل مع كل مهمة كمشروع متكامل',
       youGet: 'تستلم',
       steps: [
-        ['التقييم', 'نراجع أنظمتك وشبكتك وأمنك وسير العمل لديك.', 'تقييمًا مكتوبًا بالمخاطر مرتبة حسب الأولوية'],
+        ['التقييم', 'نراجع أنظمتك وشبكتك وأمنك، ونفهم كيف يعمل فريقك فعليًا.', 'تقييمًا مكتوبًا بالمخاطر مرتبة حسب الأولوية'],
         ['التخطيط', 'نصمّم الحل وخطة التنفيذ وفق أهدافك وميزانيتك.', 'نطاقًا وجدولًا زمنيًا وسعرًا محددًا ومكتوبًا'],
-        ['التنفيذ', 'نورّد ونُعدّ ونُكامل ونختبر.', 'توثيقًا لما تم تنفيذه مع تسليم صلاحيات الإدارة'],
-        ['الدعم', 'نبقى معك بعد التسليم.', 'مستويات خدمة متفقًا عليها ومراجعات دورية وتقارير عن حالة الأنظمة'],
+        ['التنفيذ', 'نورّد المعدات ونُعدّها ونربطها بأنظمتك الحالية ثم نختبرها.', 'توثيقًا لما تم تنفيذه مع تسليم صلاحيات الإدارة'],
+        ['الدعم', 'لا نختفي بعد التسليم.', 'مستويات خدمة متفقًا عليها ومراجعات دورية وتقارير عن حالة الأنظمة'],
       ],
     },
     engagements: {
       kicker: 'طرق التعاون',
-      title: 'اختر نمط التعاون المناسب لك',
+      title: 'ثلاث طرق للعمل معنا',
       items: [
         {
           name: 'تنفيذ المشاريع',
@@ -412,24 +411,24 @@ export const content = {
     },
     why: {
       kicker: 'لماذا ثمرة المحترفون',
-      title: 'شريك واحد. خطة واحدة. توثيق وتسليم ودعم.',
+      title: 'ما الذي تتوقعه منا',
       items: [
-        ['فريق واحد مسؤول', 'البنية التحتية والأمن والمراقبة والدعم من شركة واحدة، فلا يضيع شيء بين المقاولين.'],
-        ['نطاق محدد ومكتوب', 'تعرف ما سيُنفَّذ ومتى وبأي تكلفة قبل بدء العمل.'],
-        ['كل شيء ملكك', 'نسلّم فريقك جميع كلمات المرور وملفات الإعداد والمخططات.'],
-        ['حياد تجاه الموردين', 'نوصي بما يناسب احتياجاتك وميزانيتك، لا بما يُطلب منا بيعه.'],
-        ['محليون وثنائيو اللغة', 'مقرّنا الأردن، نعمل بالعربية والإنجليزية، ونكون حاضرين عندما تحتاجنا.'],
+        ['فريق واحد من البداية للنهاية', 'البنية التحتية والأمن والمراقبة والدعم كلها من عندنا، فلا يضيع شيء بين المقاولين.'],
+        ['لا مفاجآت في النطاق', 'قبل أن نبدأ، تعرف بالضبط ما ستحصل عليه ومتى وبكم.'],
+        ['كل شيء ملكك', 'نسلّم فريقك كلمات المرور وملفات الإعداد والمخططات كاملة، فلا تبقى مرتبطًا بنا.'],
+        ['لا نروّج لعلامة بعينها', 'نوصي بما يناسب احتياجاتك وميزانيتك، لا بما يريد مورّد ما أن نبيعه.'],
+        ['محليون وبلغتين', 'مقرّنا عمّان ونعمل بالعربية والإنجليزية، وعند أي عطل يمكنك الوصول إلى مهندس مباشرة عبر الهاتف أو واتساب.'],
       ],
     },
     offer: {
       kicker: 'تقييم مجاني للموقع',
-      title: 'لا تعرف من أين تبدأ؟ نقيّم موقعك مجانًا.',
+      title: 'لا تعرف من أين تبدأ؟ دعنا نلقي نظرة، مجانًا.',
       text: 'يراجع أحد مهندسينا بنيتك التحتية وأمنك وحلول المراقبة لديك، ثم يرسل لك ملخصًا مكتوبًا بالمخاطر مرتبة حسب الأولوية، دون أي التزام.',
       cta: 'احجز تقييمك المجاني',
     },
     faq: {
       kicker: 'الأسئلة الشائعة',
-      title: 'أسئلة نسمعها كثيرًا',
+      title: 'أسئلة يطرحها علينا العملاء',
       items: [
         ['هل تصمّمون وتنفّذون مراكز البيانات وغرف الخوادم؟', 'نعم. نصمّم وننفّذ وندعم مراكز البيانات وغرف الخوادم بالكامل: الخزائن والتمديدات والطاقة والتبريد والمحاكاة الافتراضية والمراقبة، باستخدام معدات أصلية بكفالة المصنّع الكاملة.'],
         ['هل يمكنكم العمل مع الأنظمة والموردين الحاليين لدينا؟', 'نعم. نحن محايدون تجاه الموردين، نبدأ مما لديك ونحتفظ بما يعمل جيدًا، ونوصي بالتغيير فقط حيث يحل مشكلة حقيقية.'],
@@ -443,7 +442,7 @@ export const content = {
     contact: {
       kicker: 'تواصل معنا',
       title: 'أخبرنا بما تحتاجه',
-      text: 'احجز تقييمًا مجانيًا للموقع أو اطلب عرضًا، ونرد عليك خلال يوم عمل واحد.',
+      text: 'احجز تقييمًا مجانيًا للموقع أو اطلب منا عرضًا، وسنعود إليك خلال يوم عمل واحد.',
       emailLabel: 'البريد الإلكتروني',
       phoneLabel: 'الهاتف',
       locationLabel: 'الموقع',
@@ -457,7 +456,7 @@ export const content = {
         message: 'أخبرنا عن موقعك ومتطلباتك',
         send: 'أرسل الطلب',
         sending: 'جارٍ الإرسال...',
-        sent: 'شكرًا لك. تم إرسال طلبك، وسنتواصل معك خلال يوم عمل واحد.',
+        sent: 'شكرًا، وصلنا طلبك. سيتواصل معك أحد أعضاء فريقنا خلال يوم عمل واحد.',
         error: 'عذرًا، تعذّر إرسال رسالتك. يمكنك التواصل معنا مباشرة:',
         viaWhatsapp: 'أرسل عبر واتساب',
         viaEmail: 'أرسل عبر البريد الإلكتروني',

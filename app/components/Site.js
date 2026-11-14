@@ -195,7 +195,7 @@ export default function Site({ locale }) {
                   </article>
                 );
               })}
-              {/* Sixth tile: invitation for sectors not listed */}
+              {/* Extra tile: free assessment */}
               <a
                 href="#contact"
                 data-service="assessment"
@@ -238,7 +238,7 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* ENGAGEMENTS (no prices, by design) */}
+        {/* ENGAGEMENTS */}
         <section id="engagements" className="bg-white py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <SectionTitle kicker={t.engagements.kicker} title={t.engagements.title} />
