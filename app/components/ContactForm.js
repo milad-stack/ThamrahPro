@@ -13,7 +13,6 @@ export default function ContactForm({ t, lang }) {
   const [form, setForm] = useState(empty);
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
 
-  // Any link with data-service (hero, engagement cards, mobile bar) preselects the service.
   useEffect(() => {
     const onClick = (e) => {
       const link = e.target.closest('[data-service]');
@@ -92,7 +91,7 @@ export default function ContactForm({ t, lang }) {
         {f.message}
         <textarea name="message" required rows={5} maxLength={3000} value={form.message} onChange={update('message')} className={fieldClass} />
       </label>
-      {/* Hidden field to catch spam bots; real visitors never see it */}
+      {/* honeypot */}
       <input type="text" name="website" value={form.website} onChange={update('website')} tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       <button
         type="submit"

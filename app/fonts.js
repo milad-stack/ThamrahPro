@@ -1,6 +1,5 @@
 import localFont from 'next/font/local';
 
-// Brand typefaces (SIL OFL), self-hosted from the Thamrah Pro brand package.
 export const montserrat = localFont({
   src: [
     { path: './fonts/montserrat-400.woff2', weight: '400', style: 'normal' },

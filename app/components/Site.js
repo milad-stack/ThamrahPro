@@ -74,7 +74,6 @@ export default function Site({ locale }) {
       <Header t={t} />
 
       <main className="pb-20 lg:pb-0">
-        {/* HERO */}
         <section className="relative overflow-hidden bg-navy text-white">
           <div className="circuit-bg absolute inset-0" aria-hidden="true" />
           <img
@@ -121,7 +120,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* TRUST BAR */}
         <section className="border-b border-hairline bg-white">
           <dl className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-hairline lg:grid-cols-4">
             {t.trust.map(([value, label]) => (
@@ -133,7 +131,6 @@ export default function Site({ locale }) {
           </dl>
         </section>
 
-        {/* SERVICES */}
         <section id="services" className="bg-white py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <SectionTitle kicker={t.services.kicker} title={t.services.title} />
@@ -170,7 +167,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* SECTORS */}
         <section id="sectors" className="bg-mist py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <SectionTitle kicker={t.sectors.kicker} title={t.sectors.title} />
@@ -195,7 +191,6 @@ export default function Site({ locale }) {
                   </article>
                 );
               })}
-              {/* Sixth tile: invitation for sectors not listed */}
               <a
                 href="#contact"
                 data-service="assessment"
@@ -214,7 +209,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* PROCESS */}
         <section id="process" className="relative overflow-hidden bg-navy py-20 text-white md:py-24">
           <div className="circuit-bg absolute inset-0" aria-hidden="true" />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
@@ -238,7 +232,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* ENGAGEMENTS (no prices, by design) */}
         <section id="engagements" className="bg-white py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <SectionTitle kicker={t.engagements.kicker} title={t.engagements.title} />
@@ -270,7 +263,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* WHY */}
         <section id="about" className="bg-mist py-20 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <SectionTitle kicker={t.why.kicker} title={t.why.title} />
@@ -290,7 +282,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* FREE ASSESSMENT OFFER */}
         <section className="relative overflow-hidden bg-navy py-16 text-white">
           <div className="circuit-bg absolute inset-0" aria-hidden="true" />
           <div className="relative mx-auto flex max-w-7xl flex-col items-start gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
@@ -310,7 +301,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* FAQ */}
         <section id="faq" className="bg-white py-20 md:py-24">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
             <SectionTitle kicker={t.faq.kicker} title={t.faq.title} center />
@@ -328,7 +318,6 @@ export default function Site({ locale }) {
           </div>
         </section>
 
-        {/* CONTACT */}
         <section id="contact" className="bg-mist py-20 md:py-24">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
@@ -369,7 +358,6 @@ export default function Site({ locale }) {
         </section>
       </main>
 
-      {/* FOOTER */}
       <footer className="bg-navy-950 text-white/80">
         <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:items-start md:justify-between">
           <div>
@@ -411,7 +399,6 @@ export default function Site({ locale }) {
         </div>
       </footer>
 
-      {/* STICKY MOBILE BAR */}
       <nav className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-hairline bg-white text-xs font-semibold text-navy shadow-[0_-4px_16px_rgba(11,47,107,0.08)] lg:hidden">
         <a href={`tel:${CONTACT.phoneTel}`} className="flex flex-col items-center gap-1 py-2.5">
           <Phone className="h-5 w-5" aria-hidden="true" />
@@ -427,7 +414,6 @@ export default function Site({ locale }) {
         </a>
       </nav>
 
-      {/* Desktop floating WhatsApp */}
       <a
         href={whatsappHref}
         target="_blank"
