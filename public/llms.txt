@@ -1,0 +1,44 @@
+# Thamrah Pro (Thamrah Professionals for Information Technology)
+
+> IT services company in Jordan. One team that designs, builds and supports IT infrastructure, data centers, networks, cloud, cybersecurity and surveillance for organizations across Jordan. Fixed scope in writing, full documentation handed over, support in Arabic and English.
+
+Arabic name: ثمرة المحترفون لتكنولوجيا المعلومات
+Based in Amman, serving all of Jordan. Remote-first support with on-site engineers.
+
+## Pages
+
+- [Home (English)](https://thamrahpro.com/): services, sectors, process, engagement types, FAQ and contact form
+- [Home (Arabic)](https://thamrahpro.com/ar): the same content in Arabic
+
+## Services
+
+- Data centers and server rooms: design and build
+- Network infrastructure: cabling, switching, Wi-Fi
+- Servers, storage, backup and disaster recovery (including HPE and Dell server maintenance)
+- Cloud and email: Microsoft 365 and Google Workspace
+- Cybersecurity: assessments, firewalls, endpoint protection, MFA, access reviews, staff awareness
+- Surveillance and access control: CCTV, biometrics, facial and licence-plate recognition
+- Managed IT services: monitoring, patching, asset tracking, onboarding and offboarding
+- Technical support: phone, WhatsApp, email, on-site engineers, named account manager
+- IT consulting and PMO
+
+## Sectors
+
+Enterprise, SMB, education, manufacturing and warehousing, healthcare.
+
+## How we work
+
+Assess (written, prioritized risks), Plan (fixed scope, timeline and price), Implement (supply, configure, test, hand over documentation), Support (agreed service levels and periodic reviews).
+
+## Engagement types
+
+- Project delivery: defined projects such as data centers, networks, surveillance or migrations
+- Managed IT support: ongoing monthly support with a named account manager
+- Assessment and advisory: audits, roadmaps and vendor selection before spending
+
+## Contact
+
+- Email: info@thamrahpro.com
+- Phone and WhatsApp: +962 79 915 0175
+- Free site assessment: https://thamrahpro.com/#contact
+- Response time: within one business day

@@ -17,9 +17,9 @@ export const content = {
     legalName: 'Thamrah Professionals for Information Technology',
     legalNameOther: 'ثمرة المحترفون لتكنولوجيا المعلومات',
     meta: {
-      title: 'Thamrah Pro | IT Infrastructure, Data Centers, Cybersecurity & Surveillance in Jordan',
+      title: 'IT Infrastructure & Cybersecurity in Jordan | Thamrah Pro',
       description:
-        'Thamrah Professionals for Information Technology designs, builds and supports IT infrastructure, data centers, networks, cloud, cybersecurity and surveillance solutions for organizations across Jordan. One accountable partner, fixed scope in writing.',
+        'Thamrah Pro designs, builds and supports IT infrastructure, data centers, networks, cybersecurity and CCTV across Jordan. Fixed scope, in writing.',
     },
     nav: [
       ['#services', 'Services'],
@@ -254,9 +254,9 @@ export const content = {
     legalName: 'ثمرة المحترفون لتكنولوجيا المعلومات',
     legalNameOther: 'Thamrah Professionals for Information Technology',
     meta: {
-      title: 'ثمرة المحترفون | البنية التحتية ومراكز البيانات والأمن السيبراني وحلول المراقبة في الأردن',
+      title: 'البنية التحتية والأمن السيبراني والمراقبة في الأردن | ثمرة المحترفون',
       description:
-        'تصمّم ثمرة المحترفون لتكنولوجيا المعلومات وتنفّذ وتدعم البنية التحتية لتقنية المعلومات ومراكز البيانات والشبكات والحلول السحابية والأمن السيبراني وحلول المراقبة للمؤسسات في جميع أنحاء الأردن. شريك واحد مسؤول ونطاق عمل مكتوب.',
+        'ثمرة المحترفون تصمّم وتنفّذ وتدعم البنية التحتية لتقنية المعلومات ومراكز البيانات والشبكات والأمن السيبراني وأنظمة المراقبة في الأردن. نطاق عمل مكتوب.',
     },
     nav: [
       ['#services', 'الخدمات'],
